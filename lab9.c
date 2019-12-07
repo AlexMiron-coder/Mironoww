@@ -18,7 +18,7 @@ int sign(int a)
 
 int mins(int a, int b, int c)
 {
-  return (a < b || a < c) ? a : (b < a || b < c) ? b : c; 
+  return (a < b && a < c) ? a : (b < a && b < c) ? b : c; 
 }
 
 int mod(int a, int b)
