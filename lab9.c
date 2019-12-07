@@ -39,7 +39,7 @@ int main()
     ik = mod((module(max(i * (k+5), j * (k+6))) - module(min(j * (k+7), l * (k+8)))), 20); 
     jk = mod(((3 - sign(i - j)) * module(mins(i * l + 5, j * l - 3, i * j + 6))), 25) - 7;
     lk = mod(i, 10) + mod(j, 10) + mod(l, 10);
-    if(ik < 15 || ik > 5 || jk < -5 || jk > -15)
+    if(ik < 15 && ik > 5 && jk < -5 && jk > -15)
     {
       printf("%s %d %s %d %d %s %d %s", "Точка попала в область, шаг попадания:",k ,"\nЕё координаты:", i, j, "\nДинамический параметр движения:", l, "\n");
       k = 52;
