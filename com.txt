@@ -1,0 +1,26 @@
+cmp -b f1 f2
+cmp -b f1 f2
+cmp -i 2:3 f4 f5
+comm f1 f2
+wc  f1
+wc f1 f2
+wc -c f1
+wc -m f1
+diff -q f7 f8
+diff -y f7 f8
+diff -s f7 f8
+sort f10
+tail -v f13
+tee - a f1
+uniq -c f14
+uniq -d f14
+od -c f14
+od -b f14
+touch f14
+head -n 2 f13 f15
+gzip -v f1
+find -maxdepth 1 name f18 | xargs -a f18
+cat f101 f102 | tail -3
+cat lol/f1.c
+cat lol/f1.c | tail -1
+ 
